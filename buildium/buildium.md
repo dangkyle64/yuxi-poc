@@ -27,6 +27,9 @@ async function fetchProperties() {
   try {
     const res = await fetch("https://yuxi-api.onrender.com/rental-property/sync-properties");
     const data = await res.json();
+
+    console.log(data)
+    
     const container = document.getElementById("properties-container");
 
     data.properties.forEach(p => {
