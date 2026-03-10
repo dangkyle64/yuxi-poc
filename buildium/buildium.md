@@ -25,7 +25,7 @@ Related Data
 <script>
 async function fetchProperties() {
   try {
-    const res = await fetch("https://https://yuxi-api.onrender.com//properties/sync-properties");
+    const res = await fetch("https://yuxi-api.onrender.com/properties/sync-properties");
     const data = await res.json();
     console.log("Properties:", data);
 
