@@ -20,14 +20,15 @@ Related Data
 
 [⬅ Back](../index.md)
 
-<ul id="properties-list"></ul>
+<div id="json-output"></div>
 
 <script>
 async function fetchProperties() {
   try {
     const res = await fetch("https://yuxi-api.onrender.com/rental-property/sync-properties");
     const data = await res.json();
-    //console.log("Properties JSON:", data); // this shows the JSON in the browser console
+
+    document.getElementById("json-output").textContent = JSON.stringify(data, null, 2);
   } catch (err) {
     console.error("Error fetching properties:", err);
   }
