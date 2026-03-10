@@ -44,7 +44,8 @@ async function fetchProperties() {
       card.style.cursor = "pointer";
 
       // Make card clickable to Buildium link
-      card.onclick = () => window.open(p.buildiumUrl, "_blank");
+      // p.buildiumUrl for when each card has own link temp all same link
+      card.onclick = () => window.open("./rented_property3/rented_property3.html", "_blank");
 
       // Image
       const img = document.createElement("img");
